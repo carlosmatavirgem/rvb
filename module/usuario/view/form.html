@@ -1,0 +1,51 @@
+<div class="content" id="container">
+    <div class="title">
+        <h5>{m:title_page}</h5>
+    </div>
+    {m:alterar}
+    <form method="post" id="valid" class="mainForm">
+        <fieldset>
+            <div class="widget">
+                <div class="head">
+                    <h5 class="{m:iClass}">{m:iAcao}</h5>
+                </div>
+                <div class="rowElem noborder">
+                    <label>Nome:</label>
+                    <div class="formRight">
+                        <input type="text" name="nome" class="required maxlength" maxlength="64" value="{m:nome}">
+                    </div>
+                    <div class="fix"></div>
+                </div>
+                <div class="rowElem">
+                    <label>E-mail:</label>
+                    <div class="formRight">
+                        <input type="text" name="email" class="required maxlength email" maxlength="255" value="{m:email}">
+                    </div>
+                    <div class="fix"></div>
+                </div>
+                <div class="rowElem">
+                    <label>Senha:</label>
+                    <div class="formRight">
+                        <input type="password" name="senha" class="{m:required}maxlength" maxlength="32">
+                    </div>
+                    <div class="fix"></div>
+                </div>
+                <div class="rowElem">
+                    <label>Ativo:</label>
+                    <div class="formRight">
+                        <input type="checkbox"{m:checkedA} name="ativo">
+                    </div>
+                    <div class="fix"></div>
+                </div>
+                <div class="rowElem">
+                    <div class="formRight">
+                        <input type="submit" value="Salvar" class="greyishBtn submitForm">
+                        <input type="reset" onclick="javascript:history.back(-1);" value="Cancelar" class="greyishBtn submitForm">
+                    </div>
+                    <div class="fix"></div>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+    {/m:alterar}
+</div>

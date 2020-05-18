@@ -1,0 +1,32 @@
+<div class="content">
+    <div class="title"><h5>{m:title_page}</h5></div>
+    <div class="table">
+        <div class="head"><h5 class="iList">Listagem</h5></div>
+        <div class="dataTables_wrapper" id="example_wrapper">
+            <!--div class="bt-add">
+                <a class="btn14 mlr2" title="Adicionar" href="{m:wwwroot}/admin/menu/adicionar"><img alt="" src="{m:wwwroot}/images/icons/dark/create.png"></a>
+            </div-->
+            <table cellspacing="0" cellpadding="0" border="0" id="example" class="display">
+                <thead>
+                    <tr>
+                        <th class="ui-state-default" style="width: 45px;">Id</th>
+                        <th class="ui-state-default" style="width: 606px;">Menu</th>
+                        <th class="ui-state-default" style="width: 71px;">Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {m:lista}
+                    <tr class="gradeA">
+                        <td class="center">{m:idMenu}</td>
+                        <td><span>{m:relacionado}</span>{m:menu}</td>
+                        <td class="right">
+                            <a class="btn14 mlr2" title="Alterar" href="{m:wwwroot}/admin/menu/alterar/{m:idMenu}"><img alt="" src="{m:wwwroot}/images/icons/dark/pencil.png"></a>
+                            <!--a class="btn14 mlr2" title="Excluir" href="{m:wwwroot}/admin/excluir/{m:idConteudo}"><img alt="" src="{m:wwwroot}/images/icons/dark/close.png"></a-->
+                        </td>
+                    </tr>
+                    {/m:lista}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

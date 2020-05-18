@@ -1,0 +1,63 @@
+{m:noticiaList}
+<div class="container">
+    <div class="noticia col-md-12">
+        {m:description}
+            <div class="box">
+                {m:data}
+                <div class="data">{m:dia} de {m:mes} de {m:ano}</div>
+                {/m:data}
+                <div class="col-md-5 img">
+                    <div class="row">
+                        <img src="{m:wwwroot}/image.php?src=images/arquivos/{m:imagem}&w=400&h=334" alt="{m:titulo}">
+                    </div>
+                </div>
+                <div class="col-md-7 txt">
+                    <h3>{m:titulo}</h3>
+                    {m:descricao}
+                </div>
+                <a class="leiamais" href="noticias/{m:id}"><i class="fa fa-plus" aria-hidden="true"></i>Leia mais</a>
+            </div>
+        {/m:description}
+    </div>
+</div>
+{/m:noticiaList}
+{m:detalhe}
+<div class="container">
+    <div class="noticia col-md-12">
+        <div class="col-md-12">
+            <div class="box detalhe">
+                {m:data}
+                <div class="data">{m:dia} de {m:mes} de {m:ano}</div>
+                {/m:data}
+                <div class="col-md-5 img">
+                    <div class="row">
+                        <img src="{m:wwwroot}/image.php?src=images/arquivos/{m:imagem}&w=400&h=334" alt="{m:titulo}">
+                    </div>
+                </div>
+                <div class="col-md-7 txt">
+                    <h3>{m:titulo}</h3>
+                    {m:descricao}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{/m:detalhe}
+{m:modulos}
+<div class="container">
+    <div class="modulos col-md-12">
+        <div class="col-md-12">
+            <div class="box">
+                {m:img}
+                <div class="col-md-12 imagem">
+                    <img src="{m:wwwroot}/image.php?src=images/arquivos/{m:imagem}&w=400&h=334" alt="{m:titulo}">
+                </div>
+                {/m:img}
+                <div class="col-md-12 txt">
+                    {m:descricao}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{/m:modulos}

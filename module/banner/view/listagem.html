@@ -1,0 +1,38 @@
+<div class="content">
+    <div class="title"><h5>{m:title_page}</h5></div>
+    <div class="table">
+        <div class="head"><h5 class="iList">Listagem</h5></div>
+        <div class="dataTables_wrapper" id="example_wrapper">
+            <div class="bt-add">
+                <a class="btn14 mlr2" title="Adicionar" href="{m:wwwroot}/admin/banner/adicionar"><img alt="" src="{m:wwwroot}/images/icons/dark/create.png"></a>
+            </div>
+            <table cellspacing="0" cellpadding="0" border="0" id="example" class="display">
+                <thead>
+                    <tr>
+                        <th class="ui-state-default" style="width: 45px;">Id</th>
+                        <th class="ui-state-default" style="width: 80px;">Imagem</th>
+                        <th class="ui-state-default" style="width: 373px;">Título</th>
+                        <th class="ui-state-default" style="width: 75px;">Data início</th>
+                        <th class="ui-state-default" style="width: 75px;">Data final</th>
+                        <th class="ui-state-default" style="width: 71px;">Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {m:lista}
+                    <tr class="gradeA" id="row-{m:id}">
+                        <td class="center">{m:id}</td>
+                        <td class="center"><img src="{m:wwwroot}/image.php?src=images/arquivos/banner/{m:url}&w=70&h=21" class="bannerImg"><!--div class="topTipImg"><img src="{m:wwwroot}/images/arquivos/banner/{m:url}" width="300"></div--></td>
+                        <td>{m:titulo}<span>{m:pagina}</span></td>
+                        <td class="center">{m:dataIni}</td>
+                        <td class="center">{m:dataFim}</td>
+                        <td class="right">
+                            <a class="btn14 mlr2" title="Alterar" href="{m:wwwroot}/admin/banner/alterar/{m:id}"><img alt="" src="{m:wwwroot}/images/icons/dark/pencil.png"></a>
+                            <a class="btn14 mlr2 bConfirm" id="banner-{m:id}" rel="{m:titulo}" title="Excluir"><img alt="" src="{m:wwwroot}/images/icons/dark/close.png"></a>
+                        </td>
+                    </tr>
+                    {/m:lista}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

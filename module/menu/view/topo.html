@@ -1,0 +1,14 @@
+<ul id="navigation" class="menu">
+    <li{m:home}><a href="{m:wwwroot}">Home</a></li>
+    {m:menu}
+    <li{m:class}>{m:text}
+        {m:sub}
+        <ul class="sub-menu" style="height: 252px; overflow: hidden; z-index: 1000; position: absolute; display: none; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px; ">
+            {m:submenu}
+            <li>{m:subtext}</li>
+            {/m:submenu}
+        </ul>
+        {/m:sub}
+    </li>
+    {/m:menu}
+</ul>

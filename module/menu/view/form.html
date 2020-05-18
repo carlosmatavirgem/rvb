@@ -1,0 +1,68 @@
+<div class="content" id="container">
+    <div class="title">
+        <h5>{m:title_page}</h5>
+    </div>
+    {m:alterar}
+    <form method="post" id="valid" class="mainForm">
+        <fieldset>
+            <div class="widget">
+                <div class="head">
+                    <h5 class="iAdd">Adicionar</h5>
+                </div>
+                <div class="rowElem noborder">
+                    <label>Posição do menu:</label>
+                    <div class="formRight">
+                        <select class="required" name="idMenuTipo" id="idMenuTipo">
+                            <option value="">Selecione</option>
+                            {m:tipos}
+                            <option value="{m:value}" {m:selected}>{m:text}</option>
+                            {/m:tipos}
+                        </select>
+                    </div>
+                    <div class="fix"></div>
+                </div>
+                <div class="rowElem">
+                    <label>Relacionado:</label>
+                    <div class="formRight">
+                        <select name="idMenuRelacionado" id="idMenuRelacionado">
+                            <option value="">Menu principal</option>
+                            {m:relacionados}
+                            <option value="{m:value}" {m:selected}>{m:text}</option>
+                            {/m:relacionados}
+                        </select>
+                    </div>
+                    <div class="fix"></div>
+                </div>
+                <div class="rowElem">
+                    <label>Nome:</label>
+                    <div class="formRight">
+                        <input type="text" class="required maxlength" maxlength="128" name="descricao" id="descricao" value="{m:descricao}" />
+                    </div>
+                    <div class="fix"></div>
+                </div>
+                <div class="rowElem">
+                    <label>Ordem:</label>
+                    <div class="formRight">
+                        <input type="text" class="required" name="ordem" id="ordem" value="{m:ordem}" style="width: 50px;" />
+                    </div>
+                    <div class="fix"></div>
+                </div>
+                <div class="rowElem">
+                    <label>Ativo:</label>
+                    <div class="formRight">
+                        <input type="checkbox"{m:checkedA} name="ativo">
+                    </div>
+                    <div class="fix"></div>
+                </div>
+                <div class="rowElem">
+                    <div class="formRight">
+                        <input type="submit" value="Salvar" class="greyishBtn submitForm" />
+                        <input type="reset" onclick="javascript:history.back(-1);" value="Cancelar" class="greyishBtn submitForm" />
+                    </div>
+                    <div class="fix"></div>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+    {/m:alterar}
+</div>

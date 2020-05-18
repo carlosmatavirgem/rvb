@@ -1,0 +1,95 @@
+<div class="content" id="container">
+    <div class="title">
+        <h5>{m:title_page}</h5>
+    </div>
+    {m:alterar}
+    <form method="post" id="valid" class="mainForm" enctype="multipart/form-data">
+        <fieldset>
+            <div class="widget">
+                <div class="head">
+                    <h5 class="iAdd">Adicionar</h5>
+                </div>
+                <div class="rowElem noborder">
+                    <label>Título destaque:</label>
+                    <div class="formRight">
+                        <input type="text" class="maxlength" maxlength="255" name="titulo" id="titulo" value="{m:titulo}">
+                    </div>
+                    <div class="fix"></div>
+                </div>
+                <div class="rowElem">
+                    <label>Título da descrição:</label>
+                    <div class="formRight">
+                        <input type="text" class="maxlength" maxlength="255" name="link" id="link" value="{m:link}">
+                    </div>
+                    <div class="fix"></div>
+                </div>
+                <div class="rowElem">
+                    <label>Descrição:</label>
+                    <div class="formRight">
+                        <input type="text" class="maxlength" maxlength="255" name="descricao" id="descricao" value="{m:descricao}">
+                    </div>
+                    <div class="fix"></div>
+                </div>
+                <div class="rowElem">
+                    <label>Arquivo:</label>
+                    <div class="formRight">
+                        <input type="file" name="url" id="url" class="{m:required}">
+                    </div>
+                    <div class="fix"></div>
+                </div>
+                {m:img}
+                <div class="rowElem">
+                    <label>Imagem preview</label>
+                    <div class="formRight">
+                        <div class="img-form"><img src="{m:wwwroot}/image.php?src=images/arquivos/banner/{m:url}&w=500&h=151"></div>
+                    </div>
+                    <div class="fix"></div>
+                </div>
+                {/m:img}
+                <div class="rowElem">
+                    <label>Nova janela / aba:</label>
+                    <div class="formRight">
+                        <input type="checkbox" name="novaJanela"{m:checkedN} id="novaJanela">
+                    </div>
+                    <div class="fix"></div>
+                </div>
+                <div class="rowElem">
+                    <label>Não expira a data:</label>
+                    <div class="formRight">
+                        <input type="checkbox" name="expira"{m:checkedE} id="expira">
+                    </div>
+                    <div class="fix"></div>
+                </div>
+                <div class="rowElem">
+                    <label>Data início:</label>
+                    <div class="formRight">
+                        <input type="text" class="required calendar" name="dataIni" id="dataIni" value="{m:dataIni}">
+                    </div>
+                    <div class="fix"></div>
+                </div>
+                <div class="rowElem dt"{m:dtFimRowElem}>
+                     <label>Data final:</label>
+                    <div class="formRight">
+                        <input type="text" class="required calendar"{m:dtFimDisabled} name="dataFim" id="dataFim" value="{m:dataFim}">
+                    </div>
+                    <div class="fix"></div>
+                </div>
+                <div class="rowElem">
+                    <label>Ativo:</label>
+                    <div class="formRight">
+                        <input type="checkbox"{m:checkedA} name="ativo">
+                    </div>
+                    <div class="fix"></div>
+                </div>
+                <div class="rowElem">
+                    <div class="formRight">
+                        <input type="submit" value="Salvar" class="greyishBtn submitForm" />
+                        <input type="reset" onclick="javascript:history.back(-1);" value="Cancelar" class="greyishBtn submitForm" />
+                    </div>
+                    <div class="fix"></div>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+    {/m:alterar}
+</div>

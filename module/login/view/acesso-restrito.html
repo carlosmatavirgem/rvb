@@ -1,0 +1,54 @@
+<div class="content" style="min-height: 430px;">
+    <div class="col_left" style="width: 980px; min-height: 500px;">
+        <div class="title">Acesso restrito</div>
+        {m:inscrevase}
+        <div class="txt" style="margin: 50px 0 0;">Os eventos são exclusivos para membros de empresas familiares. <a href="{m:wwwroot}/associacao/associe-se">Clique aqui inscreva-se.</a><br><br>Se você já é membro, utilize a área abaixo para fazer sua Pré-Inscrição.</div>
+        {/m:inscrevase}
+        <div class="aRestrito">
+            <div class="title">Associados</div>
+            <div class="box">
+                <form id="validA" method="post" name="formAcesso">
+                    <ul>
+                        <li>E-mail</li>
+                        <li><input type="text" name="login[email]" class="required email" /></li>
+                    </ul>
+                    <ul>
+                        <li>Senha</li>
+                        <li><input type="password" name="login[senha]" class="required" /></li>
+                    </ul>
+                    <div class="submit">
+                        <input type="submit" value="Acesse" />
+                    </div>
+                </form>
+                <div class="msgError">{m:msgErrorA}</div>
+            </div>
+        </div>
+        <div class="eSenha">
+            <div class="title">Esqueci minha senha</div>
+            <div class="box">
+                {m:sucessoSenha}
+                <div class="msgSucesso">Solicitação enviada com sucesso.<br>Você receber um e-mail em instantes.</div>
+                {/m:sucessoSenha}
+                {m:formSenha}
+                <form id="validP" method="post" name="formSenha">
+                    <ul>
+                        <li>E-mail</li>
+                        <li><input type="text" name="password[email]" class="required email" /></li>
+                    </ul>
+                    <ul>
+                        <li>CPF</li>
+                        <li><input type="text" name="password[cpf]" class="required cpf" /></li>
+                    </ul>
+                    <div class="submit">
+                        <input type="submit" value="Enviar" />
+                    </div>
+                </form>
+                {/m:formSenha}
+                <div class="msgError">{m:msgErrorS}</div>
+            </div>
+        </div>
+        {m:aRestrito}
+        <div class="txt">Alguns conteúdos do site estão disponíveis exclusivamente para associados.<br><a href="{m:wwwroot}/associacao/associe-se">Cadastre-se: clique aqui e faça parte do FBN Brasil.</a></div>
+        {/m:aRestrito}
+    </div>
+</div>

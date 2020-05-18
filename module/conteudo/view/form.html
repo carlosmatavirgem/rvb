@@ -1,0 +1,120 @@
+<div class="content" id="container">
+    <div class="title">
+        <h5>{m:title_page}</h5>
+    </div>
+    {m:alterar}
+    <form method="post" id="valid" class="mainForm" enctype="multipart/form-data">
+        <input type="hidden" name="imagem" value="{m:arquivo}">
+        <fieldset>
+            <div class="widget">
+                <div class="head">
+                    <h5 class="{m:iClass}">{m:iAcao}</h5>
+                </div>
+                <div class="rowElem noborder">
+                    <label>Página:</label>
+                    <div class="formRight">
+                        <select class="required" name="idMenu" id="idMenu">
+                            <option value="">Selecione</option>
+                            {m:pagina}
+                            <option value="{m:value}"{m:selected}>{m:text}</option>
+                            {/m:pagina}
+                        </select>
+                    </div>
+                    <div class="fix"></div>
+                </div>
+                <div class="rowElem">
+                    <label>Título:</label>
+                    <div class="formRight">
+                        <input type="text" class="required maxlength" maxlength="255" name="titulo" value="{m:titulo}">
+                    </div>
+                    <div class="fix"></div>
+                </div>
+                <div class="rowElem">
+                    <label>Resumo:</label>
+                    <div class="formRight">
+                        <textarea class="maxlength resumo" maxlength="350" name="resumo" id="resumo">{m:resumo}</textarea>
+                        <div style="float: right;">Restam: <font id="charsResumo" color="red">350</font></div>
+                    </div>
+                    <div class="fix"></div>
+                </div>
+                <div class="rowElem">
+                    <label>Descrição:</label>
+                    <div class="formRight" style="margin: 11px 12px 8px 0;">
+                        {m:fckeditor}
+                    </div>
+                    <div class="fix"></div>
+                </div>
+                <div class="rowElem">
+                    <label>Imagem:</label>
+                    <div class="formRight">
+                        <input type="file" name="arquivo">
+                    </div>
+                    <div class="fix"></div>
+                </div>
+                {m:img}
+                <div class="rowElem">
+                    <label>Imagem preview</label>
+                    <div class="formRight">
+                        <div class="img-form"><img src="{m:wwwroot}/images/arquivos/{m:arquivo}" style="width: 300px"></div>
+                    </div>
+                    <div class="fix"></div>
+                </div>
+                {/m:img}
+                <div class="rowElem">
+                    <label>Mostrar data:</label>
+                    <div class="formRight">
+                        <input type="checkbox" name="mostrarData"{m:checkedM}>
+                    </div>
+                    <div class="fix"></div>
+                </div>
+                <div class="rowElem">
+                    <label>Não expira a data:</label>
+                    <div class="formRight">
+                        <input type="checkbox" name="expira" id="expira"{m:checkedE}>
+                    </div>
+                    <div class="fix"></div>
+                </div>
+                <div class="rowElem">
+                    <label>Data início:</label>
+                    <div class="formRight">
+                        <input type="text" class="required calendar" name="dataIni" id="dataIni" value="{m:dataIni}">
+                    </div>
+                    <div class="fix"></div>
+                </div>
+                <div class="rowElem dt"{m:dtFimRowElem}>
+                     <label>Data final:</label>
+                    <div class="formRight">
+                        <input type="text" class="required calendar"{m:dtFimDisabled} name="dataFim" id="dataFim" value="{m:dataFim}">
+                    </div>
+                    <div class="fix"></div>
+                </div>
+                <!--div class="rowElem">
+                    <label>Anexo:</label>
+                    <div class="formRight">
+                        <a href="#" id="addAnexo" class="btn14 mlr2" title="Adicionar"><img alt="" src="{m:wwwroot}/images/icons/dark/add.png"></a>
+                        <div id="anexo">
+                            <p><input type="file" name="anexo[]"></p>
+                        </div>
+                        {m:anexo}
+                    </div>
+                    <div class="fix"></div>
+                </div-->
+                <div class="rowElem">
+                    <label>Ativo:</label>
+                    <div class="formRight">
+                        <input type="checkbox"{m:checkedA} name="ativo">
+                    </div>
+                    <div class="fix"></div>
+                </div>
+                <div class="rowElem">
+                    <div class="formRight">
+                        <input type="submit" value="Salvar" class="greyishBtn submitForm">
+                        <input type="reset" onclick="javascript:history.back(-1);" value="Cancelar" class="greyishBtn submitForm">
+                    </div>
+                    <div class="fix"></div>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+    {/m:alterar}
+</div>

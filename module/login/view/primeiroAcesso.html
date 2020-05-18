@@ -1,0 +1,91 @@
+<script type="text/javascript">
+function foco(){
+	document.getElementById('senhaAntiga').focus();
+}
+$().ready(function() {
+	{i:alerta}
+	$(".hide").hide();
+	{f:alerta}
+	var validator = $("#acesso").bind("invalid-form.validate", function() {
+	}).validate({
+		debug: false,
+		rules: {
+			senhaAntiga: "required",
+			senhaNova: "required",
+			confirmaSenha: "required"
+		},
+		messages: {
+			senhaAntiga: " ",
+			senhaNova: " ",
+			confirmaSenha: " "
+		}
+	});
+	$('#senhaAntiga').keyup(function(){
+		$.post("../modulo/login/novaSenha.php",
+			{ senha: $('#senhaAntiga').val()},
+			function(rtn){
+				//$('#msg').html(rtn);
+				if(rtn == 1){
+					$("#msgbox").removeClass("hide").fadeTo(200,1,function(){
+						$("#msg").html('Senha antiga incorreta.').fadeTo(900,1);
+					});		
+				}
+				else{
+					$("#msgbox").hide();
+				}
+			}
+		);
+	});
+	$('#confirmaSenha').keyup(function(){
+		$.post("../modulo/login/novaSenha.php",
+			{ nova: $('#senhaNova').val(), confrima:  $('#confirmaSenha').val()},
+			function(rtn){
+				//$('#msg').html(rtn);
+				if(rtn == 1){
+					$("#msgbox").removeClass("hide").fadeTo(200,1,function(){
+						$("#msg").html('Senha antiga incorreta.').fadeTo(900,1);
+					});		
+				}
+				else{
+					$("#msgbox").hide();
+				}
+			}
+		);
+	});
+});
+</script>
+<style type="text/css">
+#dialog_link span.ui-icon {
+	margin: 0 5px 0 0;
+	position: absolute;
+	left: .2em;
+	top: 50%;
+	margin-top: -8px;
+}
+</style>
+<div style="margin:100px auto 30px auto; width:350px;">
+<div class="ui-widget">
+  <div class="ui-state-error ui-corner-all hide" style="padding: 8px;" id="msgbox">
+    <p><span class="ui-icon ui-icon-alert" style="float: left; margin: 0 8px 0 0;"></span> <strong id="msg">{v:msg}</strong></p>
+  </div>
+</div>
+<div class="ui-accordion ui-widget">
+  <div class="ui-accordion-header ui-helper-reset ui-state-active ui-corner-top"><a href="#">Primeiro acesso - Cadastro de nova senha</a></div>
+  <div class="ui-accordion-content ui-widget-content ui-corner-bottom ui-accordion-content-active">
+    <form action="" method="post" name="acesso" class="validacao" id="acesso">
+      <div style="float:left; margin: 30px 0;"><img src="../imagem/padlock.png" width="85" height="85"></div>
+      <label for="name">Senha antiga</label>
+      <input type="password" class="text ui-widget-content ui-corner-all" id="senhaAntiga" name="senhaAntiga" />
+      <label for="nome">Senha nova</label>
+      <input type="password" class="text ui-widget-content ui-corner-all" id="senhaNova" name="senhaNova" />
+      <label for="name">Confirma senha</label>
+      <input type="password" class="text ui-widget-content ui-corner-all" id="confirmaSenha" name="confirmaSenha" />
+      <div style="background-color:#999999; margin:10px 0;"><img src="../imagem/spacer.gif" width="1" height="1" /></div>
+      <div align="right"><input type="submit" class="create-user" value="Entrar" id="entrar" style="height:28px;" /></div>
+    </form>
+  </div>
+</div>
+<div align="center">© Copyright 2010 - Todos os direitos reservados.</div>
+<script type="text/javascript">
+foco();
+</script>

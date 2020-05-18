@@ -1,0 +1,33 @@
+<div class="content" style="min-height: 430px;">
+    <div class="col_left" style="width: 980px; min-height: 500px;">
+        <div class="title">Nova senha</div>
+        <div class="nSenha">
+            <div class="title">Cadastro de senha</div>
+            <div class="box">
+                {m:sucessoSenha}
+                <div class="msgSucesso">Sua senha foi alterada com sucesso.</div>
+                {/m:sucessoSenha}
+                {m:formSenha}
+                <form id="validA" method="post" name="formAcesso">
+                    <ul>
+                        <li>CPF</li>
+                        <li><input type="text" name="senha[cpf]" class="required cpf" /></li>
+                    </ul>
+                    <ul>
+                        <li>Nova senha</li>
+                        <li><input type="password" id="senha" name="senha[senha]" class="required" /></li>
+                    </ul>
+                    <ul>
+                        <li>Confirmar senha</li>
+                        <li><input type="password" name="senha[confirmar]" class="required" equalTo="#senha" /></li>
+                    </ul>
+                    <div class="submit">
+                        <input type="submit" value="Acesse" />
+                    </div>
+                </form>
+                {/m:formSenha}
+                <div class="msgError">{m:msgErrorS}</div>
+            </div>
+        </div>
+    </div>
+</div>

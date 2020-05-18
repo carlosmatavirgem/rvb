@@ -1,0 +1,164 @@
+
+@font-face {
+	font-family: 'Roboto-Regular';
+	src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/Roboto-Regular.woff') format('woff'), 
+		 url('../fonts/Roboto-Regular.ttf')  format('truetype'), 
+		 url('../fonts/Roboto-Regular.svg#Roboto-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'GoboldThinLight';
+	src: url('../fonts/GoboldThinLight.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/GoboldThinLight.woff') format('woff'), 
+		 url('../fonts/GoboldThinLight.ttf')  format('truetype'), 
+		 url('../fonts/GoboldThinLight.svg#GoboldThinLight') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html, body { height: 100%; }
+body { font-family: 'Roboto-Regular','Open Sans', sans-serif; font-size: 14px; }
+
+.conteudo { margin-top: 0; }
+
+.navbar { height: 160px; border-bottom: 2px solid #19446e; background-color: #ffffff; }
+.navbar .navbar-brand {	display: inline-table; padding: 30px 0 0 100px; }
+.navbar-default .nav-justified { width: auto; float: right; margin-top: 93px; }
+.navbar-default .nav-justified > li { width: auto; }
+.navbar-default .nav-justified > li > a { box-shadow: inset 0 0px 0 #19446e; transition: box-shadow 0.3s linear; cursor: pointer; margin: 0 12px; padding: 15px 15px 25px; font-size: 18px; color: #19446e; }
+.navbar-default .nav-justified > li > a:hover,
+.navbar-default .nav-justified > li > a:focus { box-shadow: inset 0 -70px 0 #19446e; color: #ffffff; }
+.navbar-default .nav-justified > .active > a, 
+.navbar-default .nav-justified > .active > a:hover, 
+.navbar-default .nav-justified > .active > a:focus { box-shadow: inset 0px -70px 0 #19446e; background-color: transparent; color: #ffffff; }
+.navbar-default .nav > li > a, 
+.navbar-default .nav > li > a:hover, 
+.navbar-default .nav > li > a:focus { background-color: transparent; }
+
+nav.navbar { -webkit-transition: all 0.3s; transition: all 0.3s; height: 160px; }
+nav.navbar img { -webkit-transition: all 0.3s ease; transition: all 0.3s; width: 236px; }
+nav.navbar.navbar-default ul.nav-justified { -webkit-transition: all 0.3s ease; transition: all 0.3s; margin-top: 93px; }
+nav.navbar.shrink { height: 65px !important; }
+nav.navbar.shrink .navbar-brand { padding: 5px 0 0 100px; }
+nav.navbar.shrink img { width: 130px; }
+nav.navbar.shrink ul.nav-justified { margin-top: 0px; }
+
+.carousel { margin-top: 160px; border-bottom: 15px solid #19446e; }
+.carousel-indicators .active { background-color: #19446e; }
+.carousel-indicators li { border: 2px solid #19446e; width: 12px; height: 12px; background: #fff; margin: 0; }
+.carousel-control.left, .carousel-control.right { background-image: none; filter: none; }
+.carousel-inner, .carousel2, .item, .container2, .fill {height: 685px; width: 100%; background-position: center center; }
+.carousel-caption { bottom: initial; top: 80px; text-align: left; text-shadow: none; }
+.carousel-caption h3 { font-family: 'GoboldThinLight', 'Roboto-Regular', sans-serif; display: inline-block;color: #19446e !important; font-size: 36px; }
+.carousel-caption h4 { color: #19446e !important; font-size: 60px; font-weight: bold; }
+.carousel-caption p { color: #ffffff !important; font-size: 36px; text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.65); }
+
+.navbar-default .navbar-toggle { border-color: #19446e; }
+.navbar-toggle { margin-right: 15px; padding: 11px 8px; margin-top: 15px; border: 1px solid #ffffff; border-radius: 0; }
+.navbar-default .navbar-toggle .icon-bar { background-color: #19446e; }
+.navbar-default .navbar-toggle:hover, 
+.navbar-default .navbar-toggle:focus { background-color: transparent; }
+.navbar-default .navbar-toggle:hover > .icon-bar, 
+.navbar-default .navbar-toggle:focus > .icon-bar {  }
+.navbar-default .navbar-collapse, .navbar-default .navbar-form { margin: 0 auto; border-color: #1a97ac; }
+
+footer { background: #2d8fc3; color: #ffffff; font-size: 18px; position: relative; font-weight: 300; display: inline-block;width: 100%; }
+footer h1 { font-size: 48px; font-weight: bold; margin: 110px 0 75px; }
+footer img { width: 100%; }
+footer .txt { font-size: 20px; margin: 0 70px;  }
+footer .msg { color: #19446e; font-size: 16px; margin: 20px 0 5px; }
+footer .info { padding: 100px 0; }
+footer .telefone-desktop, footer .email { line-height: 50px; }
+footer .telefone-mobile { display: none; }
+footer a { color: #ffffff; text-decoration: none; }
+footer a:hover { text-decoration: none; color: #19446e; }
+footer ul { margin: 80px 0 0; display: inline-block; }
+footer ul li { list-style: none; width: 490px; height: 50px; margin: 20px 0; }
+footer ul li i { font-size: 40px !important; margin: 0 20px 0 0; float: left; }
+footer ul li i.fa-map-marker { margin: 0px 30px 0 12px; }
+footer ul li i.fa-phone { margin: 0px 25px 0 7px; }
+
+.eblue { background-color: #19446e; padding-top: 60px; width: 100%; font-size: 12px; letter-spacing: 0.1em; float: left; text-align: center; height: 100px; }
+.eblue a { color: inherit; text-decoration: none; }
+.eblue a, .eblue a > * { display: inline-block; vertical-align: middle; }
+.eblue a img { margin: -32px 18px 0px; width: 65px; }
+
+.omedico { background: url(../images/layout/medico-bg.jpg) no-repeat center; height: 800px; position: relative; color: #19446e; text-align: center; }
+.omedico img { margin-top: 181px; }
+.omedico h1 { font-weight: bold; font-size: 50px; margin: 190px 0 0; }
+.omedico h3 { color: #666; font-size: 27px;	margin: 15px 0 0; }
+.omedico h4 { font-family: 'GoboldThinLight', 'Roboto-Regular', sans-serif; margin: 30px 0 0;; }
+.omedico h4 span { display: inline-block; margin: 0 20px; }
+.omedico ul {margin:0;padding: 90px 0 0 150px}
+.omedico ul li {font-size: 18px;text-align: left;line-height: 16px;margin: 10px 0;}
+.omedico ul li span {display: block; font-size: 12px;}
+
+.cirurgias { background: url(../images/layout/cirurgias.jpg) no-repeat center; height: 660px; text-align: center; color: #fff; padding: 80px 70px 0; }
+.cirurgias h1 { font-family: 'GoboldThinLight', sans-serif; color: #fff; font-size: 60px; margin: 0 0 40px; }
+.cirurgias h4 { font-family: 'GoboldThinLight', sans-serif; font-size: 27px; margin: 20px 0; }
+.cirurgias img { border-radius: 170px; }
+.cirurgias a { color: #fff; text-decoration: none; }
+.cirurgias2 a img { transition: all .2s ease-in-out; }
+.cirurgias2 a:hover img { transform: scale(1.1); }
+
+.senses .thumb em{width:100%;height:100%;position:absolute;overflow:hidden;display:block;top:0;left:0;}
+.senses .thumb em:after{content:'';position:absolute;top:0;left:0;background:#ffffff;width:100%;height:100%;z-index:-1;margin:136px 0 0 0;-webkit-transition:all 0.4s ease;-o-transition:all 0.4s ease;transition:all 0.4s ease;}
+.senses .thumb:hover em:after{margin:0 0 0 0;-webkit-transition:all 0.5s ease;-o-transition:all 0.5s ease;transition:all 0.5s ease;}
+
+.dicas { padding: 80px 0; overflow: hidden;  }
+.dicas h1 { font-family: 'GoboldThinLight', sans-serif; color: #19446e; font-size: 60px; margin: 0 0 60px; text-align: center; }
+.dicas i { font-size: 40px; margin-top: -15px; }
+.dicas > div > div:nth-child(2), .dicas > div > div:nth-child(2) > i { color: #577784; }
+.dicas > div > div:nth-child(3), .dicas > div > div:nth-child(3) > i { color: #1c5885; }
+.dicas > div > div:nth-child(4), .dicas > div > div:nth-child(4) > i { color: #2b82b3; }
+.dicas > div > div { height: 120px; }
+.dicas > div > div:nth-child(2) { border-right: 2px solid #19446e; }
+.dicas > div > div:nth-child(4) { border-left: 2px solid #19446e; }
+.dicas > div > div:nth-child(5) { border: 0; text-align: center; padding-top: 70px; }
+.dicas > div > div a { border: 1px solid #19446e; border-radius: 40px; padding: 10px 20px; color: #19446e; font-size: 16px;	font-weight: bold; }
+.dicas > div > div a:hover { background: #19446e; color: #fff; text-decoration: none; }
+
+@media screen and (max-width: 767px) {
+	.navbar .navbar-brand {	padding: 30px 0 0 30px; }
+	nav.navbar.shrink .navbar-brand { padding: 5px 0 0 30px; }
+
+	.carousel-caption { bottom: initial; top: 80px; text-align: left; text-shadow: none; }
+	.carousel-caption h3 { font-size: 25px; }
+	.carousel-caption h4 { font-size: 35px; }
+	.carousel-caption p { font-size: 25px; }
+
+	footer { font-size: 16px; height: 520px; }
+	footer .info { background: none; height: 280px; width: 100%; margin: 0; float: left !important; }
+	footer .email { line-height: 33px; }
+	footer .telefone-desktop { display: none; }
+	footer .telefone-mobile { line-height: initial;display: inherit; }
+	footer ul { padding: 0; }
+	footer ul li { list-style: none; margin: 15px 0; width: 100%; height: auto; }
+	footer ul li i { font-size: 30px !important; margin: 0 20px 0 0; float: left; }
+	footer ul li i.fa-map-marker { margin: 0px 27px 32px 7px; }
+	footer ul li i.fa-phone { margin: 0px 23px 0 4px; }
+	.eblue { font-size: 10px !important; width: 100%; padding: 0; }
+	.eblue a img { width: 50px !important; margin: -18px 10px 4px !important; }
+
+	.dicas h1 { font-size: 60px; margin: 0 0 60px; }
+	.dicas i { font-size: 40px; margin-top: -15px; float: left; }
+	.dicas p { display: grid; }
+	.dicas > div > div { height: auto; margin: 40px 0px; }
+	.dicas > div > div:nth-child(2) { border: 0; }
+	.dicas > div > div:nth-child(4) { border: 0; }
+	.dicas > div > div:nth-child(5) { padding-top: 30px; }
+}
+@media screen and (max-width: 768px) {
+	.eblue { font-size: 12px; }
+	.eblue a img { margin: -30px 18px 0px; width: 65px; }
+}
+@media screen and (min-width: 370px) and (max-width: 767px) {
+}
+
+.form-control { height: 50px; border-radius: 4px; font-size: 18px; padding: 6px 25px; }
+.btn-default { background-color: #19446e; border-color: #19446e; color: #fff; }
+.btn { text-transform: uppercase; font-weight: bold; border-radius: 4px; padding: 14px 53px; }
+.btn-default:hover { background-color: #000033; border-color: #000033; color: #fff; }
+.alert { margin-bottom: 0; margin-top: 30px; border-radius: 25px; }

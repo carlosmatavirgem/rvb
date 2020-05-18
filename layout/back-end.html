@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="{m:wwwroot}/images/layout/favicon.png" type="image/ico">
+    <link rel="shortcut icon" href="{m:wwwroot}/images/layout/favicon.png" type="image/ico">
+    <link href="{m:wwwroot}/css/back_end/main.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet" type="text/css">
+    <!--[if IE 7]><style type="text/css">label.fckValidateError { margin-top: 0; }</style><![endif]-->
+    {m:headlink}
+    <script src="{m:wwwroot}/js/jquery-2.2.3.min.js"></script>
+    <script src="{m:wwwroot}/js/jquery-ui.min.js"></script>
+    <script src="{m:wwwroot}/js/jquery.collapsible.min.js"></script>
+    <script>var wwwroot = '{m:wwwroot}';</script>
+    {m:headscript}
+    <title>[ADMIN] {m:title}</title>
+</head>
+<body>
+    <div id="topNav">
+        <div class="fixed">
+            <div class="wrapper">
+                <div class="welcome"><a href="#" title=""><img src="{m:wwwroot}/images/userPic.png" alt="" /></a><span>{m:saudacao}, {m:snome}</span></div>
+                <div class="userNav">
+                    <ul>            
+                        <li><a href="{m:wwwroot}/admin/logout" title=""><img src="{m:wwwroot}/images/icons/topnav/logout.png" alt="" /><span>Sair</span></a></li>
+                    </ul>
+                </div>
+                <div class="fix"></div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper topWrapper">
+        <div class="wrapper" id="header">
+            <div class="logo"><img alt="" src="{m:wwwroot}/images/layout/logo.png" style="width: 140px;"></div>
+            <div class="fix"></div>
+        </div>
+        {m:menu}
+        {m:conteudo}
+        <div class="fix"></div>
+    </div>
+    <div id="footer">
+        <div class="wrapper"> <span>&copy; Copyright 2012. Todos os direitos reservados. <a href="//eblue.com.br" target="_blank" title="eblue marking value">eblue marking value</a></span> </div>
+    </div>
+</body>
+</html>

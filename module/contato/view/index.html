@@ -1,0 +1,52 @@
+<style>
+    html, body { height: 100%; margin: 0; padding: 0; }
+    .contato-section__map { float: left; width: 100%; height: 60%; background: #EAEAEA; margin-top: 163px; margin-bottom: 60px; }
+    .address { color: #717182; margin: 0; display: inline-block; vertical-align: top; position: relative; }
+    .address b { font-weight: bold; }
+</style>
+<div class="contato-section__map gmap" data-scrollwheel="false" data-offset="-350">
+    <div class="marker" data-icon="{m:wwwroot}/images/layout/icon-maker.png" data-lat="-12.9400564" data-lng="-38.4126249">
+        <div class="marker-content">
+            <p class="address text-left">
+                <b>+1 (412) 352-4132</b><br>
+                Rua Buenos Aires, 639 - Batel<br>
+                CEP 80250-070 Curitiba, PR
+            </p>
+        </div>
+    </div>
+</div>
+<script src="//maps.googleapis.com/maps/api/js?v=3.exp&ver=1.0&key=AIzaSyAHoUYUWD2g3OdWykvJFyTf8KzdLkfkRns"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<div class="contato">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Contato</h3>
+                <p>Dúvidas sobre nossos serviços, enviar elogios, críticas ou sugestões? Entre em contato!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="alert alert-success text-center" role="alert" style="display: none;"> <div><strong>E-mail enviado!</strong></div><div>Mensagem enviada com sucesso. <br> Entraremos em contato o mais breve possível.</div></div>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" required="required" id="nome" name="nome" placeholder="Nome">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" required="required" id="email" name="email" placeholder="E-mail">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" class="form-control" required="required" id="telefone" name="telefone" placeholder="Telefone">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" rows="5" required="required" id="mensagem" name="mensagem" placeholder="Mensagem"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <div class="g-recaptcha" data-sitekey="6Lc6FCIUAAAAALIm3I5cvvum0ouz7gqshU7YfggZ"></div>
+                    </div>
+                    <button type="submit" class="btn btn-default">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

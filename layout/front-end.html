@@ -1,0 +1,197 @@
+﻿<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="Author" content="eBlue Marking Value">
+    <meta name="Robots" content="all">
+    <meta name="rating" content="General">
+    <meta name="theme-color" content="#0d0d3d">
+    <meta property="og:url" content="{m:wwwroot}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{m:title}">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="images/">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="images/layout/favicon.png" type="image/ico">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/scrolling-nav.css" type="text/css">
+    <link rel="stylesheet" href="css/animate.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    {m:headlink}
+    <script>var wwwroot = '{m:wwwroot}';</script>
+    <title>{m:title}</title>
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <div class="navbar-wrapper">
+        <div class="container">
+            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <div class="container">
+                    <div class="navbar-header page-scroll">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand fadeInDown animated" href="{m:wwwroot}"><img src="images/layout/logo.png"></a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav nav-justified">
+                            <li{m:homepage}><a class="page-scroll" href="#page-top">Home</a></li>
+                            <li{m:omedicopage}><a class="page-scroll" href="#omedico" href="omedico">O médico</a></li>
+                            <li{m:cirurgiaspage}><a class="page-scroll" href="#cirurgias" href="cirugias">Cirurgias</a></li>
+                            <li{m:dicaspage}><a class="page-scroll" href="#dicas" href="dicas">Dicas</a></li>
+                            <li{m:contatopage}><a class="page-scroll" href="#contato" href="contato">Contato</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    {m:blocobanner}
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            {m:listbannerto}
+            <li data-target="#carousel-example-generic" data-slide-to="{m:bannercount}"{m:activecount}></li>
+            {/m:listbannerto}
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            {m:listbanner}
+            <div class="item {m:active}">
+                <div class="fill" style="background-image: url('images/arquivos/banner/{m:banner}');"></div>
+                <div class="carousel-caption">
+                    <h3 class="fadeInDownBig animated" style="color: #000;">{m:titulo}</h3>
+                    <h4 class="fadeInLeft animated" style="color: #000;">{m:link}</h4>
+                    <p class="fadeInUpBig animated" style="color: #000;">{m:descricao}</p>
+                </div>
+            </div>
+            {/m:listbanner}
+        </div>
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    {/m:blocobanner}
+
+    {m:conteudo}
+
+    <footer id="contato">
+        <div class="container">
+            <div class="col-sm-12 col-md-6 col-md-offset-1 info">
+                <div class="txt text-center">Se você quer saber mais detalhes, envie-nos uma mensagem pelo formulário abaixo.</div>
+                <div class="msg text-center">Para agilizar o atendimento, todos os campos devem ser preenchidos.</div>
+                <form>
+                    <div class="form-group">
+                        <input type="text" name="nome" class="form-control" required="required" placeholder="Digite seu nome">
+                    </div>
+                    <div class="form-group">
+                        <input type="emial" name="email" class="form-control" required="required" placeholder="Digite seu e-mail">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="telefone" class="form-control" required="required" placeholder="Digite seu telefone">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="mensagem" class="form-control" rows="4" required="required" placeholder="Digite sua mensagem"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <div class="g-recaptcha" data-sitekey="6LcKnA8UAAAAALZuiM3Mf5C_m3JJoW77DdZYr6qI"></div>
+                    </div>
+                    <button type="submit" class="btn btn-default">Enviar</button>
+                </form>
+                <div class="alert alert-success text-center" role="alert" style="display: none;"> <div><strong>E-mail enviado!</strong></div><div>Mensagem enviada com sucesso. <br> Entraremos em contato o mais breve possível.</div></div>
+            </div>
+            <div class="col-sm-12 col-md-5 info">
+                <ul>
+                    <li class="endereco"><i class="fa fa-map-marker" aria-hidden="true"></i>Av. Luís Viana, 6462, Condomínio Wall Street, Sl 108, Torre A, Patamares, Salvador-BA</li>
+                    <li class="telefone-desktop"><i class="fa fa-phone" aria-hidden="true"></i>71 3461-1799 / 71 98842-7407</li>
+                    <li class="telefone-mobile"><i class="fa fa-phone" aria-hidden="true"></i>71 3461-1799<br>71 98842-7407</li>
+                    <!--li class="email"><i class="fa fa-envelope-o" aria-hidden="true"></i><a hret="mailto:contato@rogeriovilasboas.com.br">contato@rogeriovilasboas.com.br</a></li-->
+                    <li class="email"><i class="fa fa-facebook-official" aria-hidden="true"></i><a href="https://www.facebook.com/drrogeriovilasboas" target="_blank">/drrogeriovilasboas</a></li>
+                    <li class="email"><i class="fa fa-instagram" aria-hidden="true"></i><a href="https://www.instagram.com/drrogeriovilasboas/" target="_blank">/drrogeriovilasboas</a></li>
+                </ul>
+            </div>
+        </div>
+        <style>
+            .contato-section__map { width: 100%; height: 500px; background: #eaeaea; }
+            .address { color: #717182; margin: 0; display: inline-block; vertical-align: top; position: relative; }
+            .address i { font-size: 18px; margin-right: 7px; width: 20px; text-align: center; position: relative; top: 4px; }
+            .address span { margin: 0 0 6px; display: inline-flex; }
+            .address span b { font-weight: bold; }
+            .address span a { color: #3a84df; }
+            .address span a:hover { text-decoration: underline; }
+        </style>
+        <div class="contato-section__map gmap wow fadeInUp animated" data-scrollwheel="false" data-offset="-150">
+            <div class="marker" data-icon="images/layout/icon-maker.png" data-lat="-12.9400564" data-lng="-38.4126249">
+                <div class="marker-content">
+                    <p class="address text-left">
+                        <i class="fa fa-phone" aria-hidden="true"></i><span><b>(71) 3461-1799 / (71) 98842-7407</b></span><br>
+                        <i class="fa fa-map-marker" aria-hidden="true"></i><span>Av. Luís Viana, 6462<br>Condomínio Wall Street, Sl 108, Torre A<br>Patamares, Salvador-BA<br>CEP 41680-400</span><br>
+                        <i class="fa fa-link2" aria-hidden="true"></i><span><a href="https://goo.gl/maps/vPWM2F4LF482" target="_blank">Visualizar mapa ampliado</a></span><br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script src="//maps.googleapis.com/maps/api/js?v=3.exp&ver=1.0&key=AIzaSyCTf3YjSVrlcUDkFPNugv3mPWe96hRUH8k"></script>
+
+        <div class="col-md-12 eblue">
+            <a class="fadeInUp animated" href="//www.eblue.com.br" target="_blank" title="eBlue Making Value">
+                <span>eBlue Making Value</span>
+                <img src="images/layout/eblue_white.png" alt="eBlue Making Value">
+                <span>Copyright © 2019</span>
+            </a>
+        </div>
+    </footer>
+
+    <script src='js/jquery-2.2.3.min.js'></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>new WOW().init();</script>
+    <script src="js/custom_front_end.js"></script>
+    <script src="js/maps.js"></script>
+
+    {m:headscript}
+
+    <script>
+        $(function () {
+            $("form").on("submit", function (e) {
+                e.preventDefault();
+                var data = $(this).serialize();
+                $.ajax({
+                    type: "POST",
+                    url: "email",
+                    data: data,
+                    success: function (data) {
+                        if (data) {
+                            $(".alert").fadeIn("slow");
+                            $(this).each(function () {
+                                $("input, textarea").val('');
+                            });
+                        }
+                    },
+                    error: function (error) {
+                        alert("error handing here");
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
